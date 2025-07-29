@@ -3,6 +3,7 @@ import './App.css';
 import SignUp from './components/SignUp';
 import SignIn from './components/SignIn';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import CreatePost from './components/CreatePost';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
    <Routes>
     <Route path='/' element={<SignIn />} />
     <Route path='/signup' element={<SignUp />} />
+    <Route path='/createpost' element={<CreatePost/>} />
    </Routes>
    </BrowserRouter>
   );
