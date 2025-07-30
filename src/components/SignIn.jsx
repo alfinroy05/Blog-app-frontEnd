@@ -32,6 +32,7 @@ const SignIn = () => {
                 let userId= response.data.userId;
                 sessionStorage.setItem("token", token);
                 sessionStorage.setItem("userId", userId);
+                console.log(userId)
                 navigate("/createpost");
 
             }
