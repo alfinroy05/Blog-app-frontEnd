@@ -5,7 +5,7 @@ const CreatePost = () => {
   const token= sessionStorage.getItem("token");
   const [input, setInput] = useState({
     "message": "",
-    "userId": sessionStorage.getItem("userId")
+    "userId": sessionStorage.getItem("userId"),
 
   })
   const inputHandler = (event) => {
@@ -36,7 +36,7 @@ const CreatePost = () => {
           <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div className="row g-3">
               <div className="col col-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                <label htmlFor="" className="form-label">Post a Message</label>
+                <label htmlFor="message" className="form-label">Post a Message</label>
                 <textarea name="message" value={input.message} onChange={inputHandler} className="form-control"></textarea>
               </div>
               <div className="col col-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
